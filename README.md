@@ -1,3 +1,15 @@
+# Changes in this fork
+
+facebookConnectPlugin.js:12
+
+`if (cordova.platformId == "browser") {`
+
+has been changed to 
+
+`if (!window.cordova || cordova.platformId == "browser") {`
+
+This allows use of the plugin when not running the client with ionic/cordova.
+
 # Apache Cordova Facebook Plugin
 
 This is the official plugin for Facebook in Apache Cordova/PhoneGap!
